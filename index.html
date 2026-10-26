@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>ReedHycalog/NOV</title>
+    <link rel="shortcut icon" href="NOV.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="video_pozo_2.mp4" />
+    <img
+      src="logo_reedhycalog_blanco.png"
+      alt="Logotipo de la empresa de perforación"
+      class="mi-imagen"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="video-fondo">
+      <source src="video_pozo_2.mp4" type="video/mp4" />
+    </video>
+    <div class="login-container">
+      <h2>Acceso al sistema</h2>
+      <p>Ingresa tus credenciales para continuar</p>
+
+      <form id="login-form">
+        <div class="input-group">
+          <label for="username">Usuario</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Ingresa tu usuario"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label1 for="password">Contraseña</label1>
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-login">Ingresar</button>
+      </form>
+
+      <!--mensaje de error si la contraseña está mal-->
+      <p id="error-message" class="error-msg"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

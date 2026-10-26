@@ -1,0 +1,140 @@
+/* Estilos para que el video funcione como fondo absoluto */
+#video-fondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Envía el video al fondo detrás de todo */
+    object-fit: cover; /* Evita que el video se deforme */
+    filter: brightness(0.6);
+    
+}
+
+/* Una capa para centrar el texto sobre el video */
+.contenido {
+    
+    z-index: 1;
+    margin-top: 100px;
+    color: #ffffff;
+}
+.mi-imagen {
+    width: 350px;       /* Ancho de la imagen (puedes cambiarlo a 200px, 300px, etc.) */
+    height: auto;       /* Mantiene la proporción para que no se deforme */
+    margin: 0px 0;     /* Espaciado arriba y abajo */
+    padding: 30px;
+    position: absolute; /* Lo saca del orden general de la pantalla */
+    top: 20px;          /* Distancia desde la parte de arriba */
+    right: 20px;         /* Distancia desde la esquina izquierda */
+    z-index: 10;        /* Asegura que siempre esté por encima del video */
+      
+}
+/*general*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center; /* Esto es lo que empuja el cuadro hacia el centro horizontal */
+    align-items: center;     /* Esto lo centra de arriba a abajo */
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+/*caja principal del inicio de sesión*/
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.login-container h2 {
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.login-container p{
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/*campos de entrada*/
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+/*LETRAS DE USUARIO*/
+.input-group label{
+    display: block;
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/*CASILLA DE USUARIO*/
+.input-group input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/*LETRAS DE contraseña*/
+.input-group label1{
+    display: block;
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/*CASILLA DE contraseña*/
+.input-group input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #3ab929;
+    outline: none;
+}
+
+/*boton de ingreso*/
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74d0aef;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-login:hover{
+    background-color: #a62f03;
+}
+
+/*mensaje de error*/
+.error-msg {
+    color:#2980b9 !important;
+    margin-top: 15px !important;
+    font-weight: bold;
+}
