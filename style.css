@@ -91,24 +91,6 @@ body{
     box-sizing: border-box;
 }
 
-/*LETRAS DE contraseña*/
-.input-group label1{
-    display: block;
-    font-size: 20px;
-    color: #34495e;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-/*CASILLA DE contraseña*/
-.input-group input{
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #bdc3c7;
-    border-radius: 6px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
 .input-group input:focus {
     border-color: #3ab929;
     outline: none;
@@ -137,4 +119,44 @@ body{
     color:#2980b9 !important;
     margin-top: 15px !important;
     font-weight: bold;
+}
+
+/* 1. Contenedor que abraza al input y al botón */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* 2. El campo de texto deja espacio a la derecha para que el texto no tape el ícono */
+.password-wrapper input {
+  width: 100%;
+  padding-right: 45px; 
+}
+
+/* 3. El botón se posiciona de manera absoluta a la derecha, centrado verticalmente */
+.toggle-btn {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 100%;
+  color: #666666;
+}
+
+/* 4. Forzar el tamaño exacto del ícono SVG para que no crezca ni se deforme */
+.toggle-btn svg {
+  width: 20px !important;
+  height: 20px !important;
+  display: block;
+}
+
+.toggle-btn:hover {
+  color: #ff5722; /* Color de realce al pasar el mouse */
 }
